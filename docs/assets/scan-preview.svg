@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
+  <rect width="1200" height="500" rx="24" fill="#0d1117"/>
+  <rect x="0" y="0" width="1200" height="54" rx="24" fill="#161b22"/><circle cx="30" cy="27" r="8" fill="#ff5f56"/><circle cx="56" cy="27" r="8" fill="#ffbd2e"/><circle cx="82" cy="27" r="8" fill="#27c93f"/>
+  <text x="105" y="34" font-family="Segoe UI,Arial" font-size="18" fill="#8b949e">PowerShell · ProcSentinel-C</text>
+  <g font-family="Cascadia Mono,Consolas,monospace" font-size="20">
+    <text x="35" y="95" fill="#58a6ff">PS C:\Tools\ProcSentinel&gt;</text><text x="330" y="95" fill="#f0f6fc"> .\procsentinel.exe scan</text>
+    <text x="35" y="135" fill="#3fb950">ProcSentinel-C 1.0.0</text>
+    <text x="35" y="167" fill="#8b949e">Processes: 164</text>
+    <text x="35" y="215" fill="#f0f6fc">PID     PPID    IMAGE                        TRIAGE</text>
+    <text x="35" y="244" fill="#8b949e">------- ------- ---------------------------- ----------------</text>
+    <text x="35" y="280" fill="#f0f6fc">1036    876     svchost.exe                  score=0</text>
+    <text x="35" y="314" fill="#f0f6fc">4128    1980    explorer.exe                 score=0</text>
+    <text x="35" y="348" fill="#f0f6fc">6840    4128    lab-tool.exe                 </text><text x="565" y="348" fill="#d29922">score=30</text>
+    <text x="35" y="382" fill="#f0f6fc">7184    4128    packed-demo.exe              </text><text x="565" y="382" fill="#f85149">score=65</text>
+    <text x="35" y="416" fill="#8b949e">4       0       System                       score=0   [restricted]</text>
+    <text x="35" y="464" fill="#58a6ff">PS C:\Tools\ProcSentinel&gt;</text>
+  </g>
+</svg>
