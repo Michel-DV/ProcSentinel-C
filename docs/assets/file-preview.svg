@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+  <rect width="1200" height="680" rx="24" fill="#0d1117"/>
+  <rect width="1200" height="54" rx="24" fill="#161b22"/><circle cx="30" cy="27" r="8" fill="#ff5f56"/><circle cx="56" cy="27" r="8" fill="#ffbd2e"/><circle cx="82" cy="27" r="8" fill="#27c93f"/>
+  <text x="105" y="34" font-family="Segoe UI,Arial" font-size="18" fill="#8b949e">PowerShell · file triage</text>
+  <g font-family="Cascadia Mono,Consolas,monospace" font-size="18">
+    <text x="32" y="92" fill="#58a6ff">PS C:\Lab&gt;</text><text x="150" y="92" fill="#f0f6fc"> .\procsentinel.exe file C:\Lab\sample.exe</text>
+    <text x="32" y="132" fill="#8b949e">Path              :</text><text x="250" y="132" fill="#f0f6fc"> C:\Lab\sample.exe</text>
+    <text x="32" y="162" fill="#8b949e">SHA-256           :</text><text x="250" y="162" fill="#f0f6fc"> 6b2d...e8f1</text>
+    <text x="32" y="192" fill="#8b949e">Signature         :</text><text x="250" y="192" fill="#d29922"> unsigned</text>
+    <text x="32" y="222" fill="#8b949e">Risk score        :</text><text x="250" y="222" fill="#f85149"> 65 / 100 (MEDIUM)</text>
+    <text x="32" y="252" fill="#8b949e">PE architecture   :</text><text x="250" y="252" fill="#f0f6fc"> PE32+ / 64-bit</text>
+    <text x="32" y="282" fill="#8b949e">Entry RVA         :</text><text x="250" y="282" fill="#f0f6fc"> 0x00001240</text>
+    <text x="32" y="312" fill="#8b949e">Imports captured  :</text><text x="250" y="312" fill="#f0f6fc"> 83</text>
+    <text x="32" y="342" fill="#8b949e">Dual-use APIs     :</text><text x="250" y="342" fill="#f0f6fc"> 4 (informational)</text>
+    <text x="32" y="390" fill="#f0f6fc">Findings</text>
+    <text x="55" y="422" fill="#f85149">[HIGH] Writable + executable PE section</text>
+    <text x="55" y="452" fill="#d29922">[MED]  High-entropy executable section</text>
+    <text x="55" y="482" fill="#d29922">[LOW]  File is unsigned</text>
+    <text x="32" y="530" fill="#f0f6fc">PE sections</text>
+    <text x="55" y="562" fill="#f0f6fc">.text    RVA=0x00001000 raw=28672  entropy=6.42 R-X  &lt;entry&gt;</text>
+    <text x="55" y="592" fill="#f0f6fc">.rdata   RVA=0x00008000 raw=12288  entropy=5.19 R--</text>
+    <text x="55" y="622" fill="#f85149">.data    RVA=0x0000B000 raw=4096   entropy=7.54 RWX</text>
+    <text x="32" y="660" fill="#8b949e">Illustrative v1 output · no malware sample is included</text>
+  </g>
+</svg>
