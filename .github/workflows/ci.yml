@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  windows-msvc:
+    name: Windows / MSVC / x64
+    runs-on: windows-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Configure
+        run: cmake -S . -B build -A x64 -DBUILD_TESTING=ON
+
+      - name: Build
+        run: cmake --build build --config Release --parallel
+
+      - name: Unit tests
+        run: ctest --test-dir build -C Release --output-on-failure
+
+      - name: Version smoke test
+        shell: pwsh
+        run: |
+          $version = .\build\Release\procsentinel.exe --version
+          if ($version.Trim() -ne "1.0.0") { throw "unexpected version: $version" }
+
+      - name: Self-analysis JSON smoke test
+        shell: pwsh
+        run: |
+          $raw = .\build\Release\procsentinel.exe file .\build\Release\procsentinel.exe --json
+          $data = $raw | ConvertFrom-Json
+          if (-not $data.pe.valid) { throw "self PE analysis did not produce a valid PE" }
+          if ($data.sha256.Length -ne 64) { throw "unexpected SHA-256 length" }
+          Write-Host "self-analysis score:" $data.score
+
+      - name: Quick endpoint inventory smoke test
+        shell: pwsh
+        run: |
+          $raw = .\build\Release\procsentinel.exe scan --quick --json
+          $data = $raw | ConvertFrom-Json
+          if (@($data).Count -lt 1) { throw "process inventory returned no processes" }
+          Write-Host "inventory processes:" @($data).Count
