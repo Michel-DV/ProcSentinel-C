@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+  <rect width="1200" height="420" rx="28" fill="#0d1117"/>
+  <style>
+    .t{font:600 24px 'Segoe UI',Arial,sans-serif;fill:#f0f6fc}.s{font:16px 'Segoe UI',Arial,sans-serif;fill:#8b949e}.box{fill:#161b22;stroke:#30363d;stroke-width:2}.hi{fill:#238636}.line{stroke:#58a6ff;stroke-width:3;fill:none;marker-end:url(#a)}
+  </style>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#58a6ff"/></marker></defs>
+  <text x="60" y="55" class="t">ProcSentinel-C · endpoint evidence pipeline</text>
+  <rect x="55" y="100" width="230" height="90" rx="15" class="box"/><text x="85" y="135" class="t">Processes</text><text x="85" y="165" class="s">PID · PPID · token · arch</text>
+  <rect x="55" y="230" width="230" height="90" rx="15" class="box"/><text x="85" y="265" class="t">TCP owner table</text><text x="85" y="295" class="s">IPv4 endpoints by PID</text>
+  <rect x="355" y="70" width="260" height="90" rx="15" class="box"/><text x="385" y="105" class="t">SHA-256</text><text x="385" y="135" class="s">Windows CNG / BCrypt</text>
+  <rect x="355" y="180" width="260" height="90" rx="15" class="box"/><text x="385" y="215" class="t">Authenticode</text><text x="385" y="245" class="s">WinVerifyTrust · cache only</text>
+  <rect x="355" y="290" width="260" height="90" rx="15" class="box"/><text x="385" y="325" class="t">PE parser</text><text x="385" y="355" class="s">sections · entropy · imports</text>
+  <rect x="690" y="125" width="210" height="170" rx="18" class="box"/><text x="730" y="175" class="t">Evidence</text><text x="730" y="208" class="s">correlation</text><text x="730" y="240" class="s">+ explainable</text><text x="730" y="272" class="s">0–100 scoring</text>
+  <rect x="980" y="105" width="165" height="80" rx="15" class="box"/><text x="1010" y="145" class="t">Console</text>
+  <rect x="980" y="235" width="165" height="80" rx="15" class="box"/><text x="1020" y="275" class="t">JSON</text>
+  <path d="M285 145 H330" class="line"/><path d="M285 275 H330" class="line"/>
+  <path d="M615 115 H665 V170 H690" class="line"/><path d="M615 225 H690" class="line"/><path d="M615 335 H665 V250 H690" class="line"/>
+  <path d="M900 180 H945 V145 H980" class="line"/><path d="M900 240 H945 V275 H980" class="line"/>
+  <rect x="1010" y="345" width="135" height="34" rx="17" class="hi"/><text x="1027" y="368" style="font:600 15px 'Segoe UI',Arial;fill:white">READ ONLY</text>
+</svg>

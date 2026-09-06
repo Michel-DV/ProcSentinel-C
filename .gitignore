@@ -1,0 +1,12 @@
+/build/
+/out/
+.vs/
+*.user
+*.suo
+*.VC.db
+*.VC.VC.opendb
+*.obj
+*.pdb
+*.ilk
+*.exe
+.DS_Store

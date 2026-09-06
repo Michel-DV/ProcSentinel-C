@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+  <rect width="1200" height="520" rx="24" fill="#0d1117"/>
+  <rect width="1200" height="54" rx="24" fill="#161b22"/><circle cx="30" cy="27" r="8" fill="#ff5f56"/><circle cx="56" cy="27" r="8" fill="#ffbd2e"/><circle cx="82" cy="27" r="8" fill="#27c93f"/>
+  <text x="105" y="34" font-family="Segoe UI,Arial" font-size="18" fill="#8b949e">PowerShell · JSON pipeline</text>
+  <g font-family="Cascadia Mono,Consolas,monospace" font-size="18">
+    <text x="32" y="92" fill="#58a6ff">PS C:\Lab&gt;</text><text x="150" y="92" fill="#f0f6fc"> .\procsentinel.exe pid 7184 --json | ConvertFrom-Json</text>
+    <text x="45" y="138" fill="#79c0ff">pid</text><text x="220" y="138" fill="#f0f6fc">: 7184</text>
+    <text x="45" y="170" fill="#79c0ff">parent_pid</text><text x="220" y="170" fill="#f0f6fc">: 4128</text>
+    <text x="45" y="202" fill="#79c0ff">image</text><text x="220" y="202" fill="#f0f6fc">: packed-demo.exe</text>
+    <text x="45" y="234" fill="#79c0ff">integrity</text><text x="220" y="234" fill="#f0f6fc">: medium</text>
+    <text x="45" y="266" fill="#79c0ff">architecture</text><text x="220" y="266" fill="#f0f6fc">: x64</text>
+    <text x="45" y="298" fill="#79c0ff">accessible</text><text x="220" y="298" fill="#3fb950">: True</text>
+    <text x="45" y="330" fill="#79c0ff">file.score</text><text x="220" y="330" fill="#f85149">: 65</text>
+    <text x="45" y="362" fill="#79c0ff">file.signature</text><text x="220" y="362" fill="#d29922">: unsigned</text>
+    <text x="45" y="394" fill="#79c0ff">tcp</text><text x="220" y="394" fill="#f0f6fc">: {@{state=ESTABLISHED; local=192.168.1.10:51244; ...}}</text>
+    <text x="32" y="458" fill="#8b949e">Structured evidence can be consumed by PowerShell, SIEM lab pipelines or custom tooling.</text>
+  </g>
+</svg>
